@@ -21,7 +21,7 @@ class Block:
     def get_text(self):
         # Salt must be calculated and confirmation needn't change hash
 
-        exit_str = "{TimeStamp:{%s},SenderWallet:{%s},ReceiverWallet:{%s},Ammount:{%s},Message:{%s}HashOfPreviousBlock:{%s}}" % (str(self.timestamp), self.wallet_sender, self.wallet_receiver, str(self.amount), self.message, self.prev_hash)
+        exit_str = "{TimeStamp:{%s},SenderWallet:{%s},ReceiverWallet:{%s},Amount:{%s},Message:{%s}HashOfPreviousBlock:{%s}}" % (str(self.timestamp), self.wallet_sender, self.wallet_receiver, str(self.amount), self.message, self.prev_hash)
 
         return exit_str
 
@@ -30,8 +30,8 @@ class Block:
         return self.confirmed
 
     # easier make it here
-    def make_genesis():
+    def make_genesis(self):
 
-        genesis = Block("m8LD1LvJwHA58GrDptdPMJasiwnBe1XoCbtyd1g4ij343LyjRpv1GZUHW7njFoperwSzJgqhh5g1NPF32eGoZN2Mb9cAMVAy4TJGjCtqZcZKqmp8m7JAC6G7oWETNeVE", "14DmxXfzdtFrHUVYXpxVh3RmWccsgP58UDivHi6D5G7CvGz7Snr6osMK9miKfSyYJnU1FY3LfMTy42PHpDW2En9c6QzbmdFhtwCqTn38bHo6TzWoRN1xTRotniCsWdKA",1,'')
+        genesis = Block("6vMkBZfwDPRjJ5D3vntC8ckeDku5opik", "MGvehibp2H7yEuyMXa4doWXP4NjPbfxP", 1, '')
 
         return genesis

@@ -4,12 +4,13 @@ import string
 import random
 import chain
 
+
 class User:
 
     def __init__(self):
-        self.adress = ''
+        self.address = ''
         self.blocks = []
-        self.sth_like_balance
+        self.semblance_of_balance = 0
 
     def create(self):
 
@@ -24,7 +25,7 @@ class User:
             if a in data:
                 pass
             else:
-                self.adress = a
+                self.address = a
 
     def find_blocks(self):
         curr_chain = chain.get_current()
