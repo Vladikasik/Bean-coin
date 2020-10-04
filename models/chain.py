@@ -8,3 +8,16 @@ class Chain:
 
         pass
 
+    def get_current(self):
+
+        pass
+
+    def validate_chain(self):
+
+        pass
+
+    def write_to_file(self, chain_to_write):
+
+        pass
+
+

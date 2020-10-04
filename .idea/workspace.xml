@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f76abe21-2d57-4395-a5be-ae0cda5f1643" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Bean coin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bean coin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumable/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/consumable/users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/block.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/block.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/chain.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/chain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/server-chain.py" beforeDir="false" afterPath="$PROJECT_DIR$/executable/server-chain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/adress.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/adress.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +32,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vladi\Documents\Programming\python\Bean coin\executable" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.adress">
     <configuration name="adress" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -115,9 +119,13 @@
       <screen x="0" y="0" width="3072" height="1728" />
     </state>
     <state width="3028" height="489" key="GridCell.Tab.0.right/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1601761033767" />
-    <state x="1199" y="397" width="672" height="678" key="search.everywhere.popup" timestamp="1601665358585">
+    <state x="1045" y="506" key="SettingsEditor" timestamp="1601842591065">
       <screen x="0" y="0" width="3072" height="1728" />
     </state>
-    <state x="1199" y="397" width="672" height="678" key="search.everywhere.popup/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1601665358585" />
+    <state x="1045" y="506" key="SettingsEditor/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1601842591065" />
+    <state x="1199" y="397" width="672" height="678" key="search.everywhere.popup" timestamp="1601842757437">
+      <screen x="0" y="0" width="3072" height="1728" />
+    </state>
+    <state x="1199" y="397" width="672" height="678" key="search.everywhere.popup/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1601842757437" />
   </component>
 </project>
