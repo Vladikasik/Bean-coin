@@ -35,7 +35,7 @@ class Server_chain:
                     self.json_data = data_recieve[1]
 
 
-                    if request_data == 'orders':
+                    if request_data == 'download':
                         self.get_data()
                     elif request_data == 'items':
                         self.get_items()

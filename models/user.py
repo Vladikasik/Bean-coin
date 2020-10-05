@@ -19,8 +19,7 @@ class User:
         with open('../consumable/users.json') as f:
             data = json.load(f)
 
-        letters_and_digits = string.ascii_letters + string.digits
-        a = ''.join((random.choice(letters_and_digits) for i in range(32)))
+
         if '0' in a or 'O' in a or 'I' in a or 'l' in a:
             pass
         else:

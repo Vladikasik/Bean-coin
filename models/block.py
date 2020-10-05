@@ -18,6 +18,9 @@ class Block:
     def confirm(self):
         self.confirmed = True
 
+    # getting hash of block
+    def get_hash(self):
+
     # return string as json obj to get hash for next block
     def get_text(self):
         # Salt must be calculated and confirmation needn't change hash

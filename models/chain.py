@@ -18,6 +18,11 @@ class Chain:
 
     def write_to_file(self, chain_to_write):
 
-        pass
+        with open('current_chain.json', 'w') as f:
+
+            json.dump(chain_to_write, f)
+
+
+
 
 
