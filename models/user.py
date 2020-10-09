@@ -26,16 +26,17 @@ class User:
             data = json.load(f)
 
         while 1:
-            (a, privkey) = rsa.newkeys(50)
+            (pubkey, privkey) = rsa.newkeys(136)
 
-            a = str(a)
-
+            a = pubkey.save_pkcs1().splitlines()[1:-1]
             if a in data:
                 pass
             else:
-                self.address = a
+                self.address = a[0].decode('utf-8')
                 break
 
+        self.public_key = pubkey.save_pkcs1()
+        self.private_key = privkey.save_pkcs1()
 
     # finding blocks where self address is sender or receiver
     def find_blocks(self):

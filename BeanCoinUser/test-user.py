@@ -1,12 +1,13 @@
 # some_file.py
 import json
 import sys
+
 # insert at 1, 0 is the script path (or '' in REPL)
 sys.path.insert(1, '../models')
 
 import block
 import chain
-import user
+from user import User
 
 print('-------------------------------------------\n'
       '|                                         |\n'
@@ -14,13 +15,28 @@ print('-------------------------------------------\n'
       '|                                         |\n'
       '-------------------------------------------\n')
 
+
+def create_account():
+    username = input('Input our username\n')
+
+    user = User()
+
+    user.create(username)
+
+    print(f'Username : {user.username}')
+    print(f'Address : {user.address}')
+
+
 with open('session.json', 'r') as file:
-    session = json.laod(file)
+    session = json.load(file)
 
-if session == []:
+if not session:
     print('Do you wanna to make a new account?')
-    ans = input('1 - Yes, 2 - no')
-
+    ans = input('1 - Yes, 2 - no\n')
+    if ans == '2':
+        exit(0)
+    else:
+        create_account()
 
 # while 1:
 #

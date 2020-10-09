@@ -4,8 +4,6 @@ import socket
 class Server:
 
     def __init__(self, request_data, request_type):
-        self.request_data = request_data
-        self.request_type = request_type
         self.sock1 = socket.socket()
         self.sock1.connect(('89.223.122.217', 2048))
         self.buffer_size = 0
@@ -13,6 +11,7 @@ class Server:
     # download users_list when trying to create a new one
     def download_users(self):
 
+        data_to_send = b'[{"RequestType": "DownloadUsers"},{]'
 
     # def main(self):
     #

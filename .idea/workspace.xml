@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f76abe21-2d57-4395-a5be-ae0cda5f1643" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/vladi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BeanCoinUser/session.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/block.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/block.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeanCoinUser/test-user.py" beforeDir="false" afterPath="$PROJECT_DIR$/BeanCoinUser/test-user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/adress.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/adress.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
       <recent name="C:\Users\vladi\Documents\Programming\python\Bean coin\executable" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.user">
+  <component name="RunManager" selected="Python.adress">
     <configuration name="adress" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bean coin" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,9 +106,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.user" />
         <item itemvalue="Python.test-user" />
         <item itemvalue="Python.adress" />
+        <item itemvalue="Python.user" />
       </list>
     </recent_temporary>
   </component>
@@ -127,26 +126,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="3028" height="489" key="GridCell.Tab.0.bottom" timestamp="1602022227228">
+    <state width="3028" height="489" key="GridCell.Tab.0.bottom" timestamp="1602257236303">
       <screen x="0" y="0" width="3072" height="1728" />
     </state>
-    <state width="3028" height="489" key="GridCell.Tab.0.bottom/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1602022227228" />
-    <state width="3028" height="489" key="GridCell.Tab.0.center" timestamp="1602022227228">
+    <state width="3028" height="489" key="GridCell.Tab.0.bottom/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1602257236303" />
+    <state width="3028" height="489" key="GridCell.Tab.0.center" timestamp="1602257236303">
       <screen x="0" y="0" width="3072" height="1728" />
     </state>
-    <state width="3028" height="489" key="GridCell.Tab.0.center/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1602022227228" />
-    <state width="3028" height="489" key="GridCell.Tab.0.left" timestamp="1602022227228">
+    <state width="3028" height="489" key="GridCell.Tab.0.center/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1602257236303" />
+    <state width="3028" height="489" key="GridCell.Tab.0.left" timestamp="1602257236303">
       <screen x="0" y="0" width="3072" height="1728" />
     </state>
-    <state width="3028" height="489" key="GridCell.Tab.0.left/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1602022227228" />
-    <state width="3028" height="489" key="GridCell.Tab.0.right" timestamp="1602022227228">
+    <state width="3028" height="489" key="GridCell.Tab.0.left/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1602257236303" />
+    <state width="3028" height="489" key="GridCell.Tab.0.right" timestamp="1602257236303">
       <screen x="0" y="0" width="3072" height="1728" />
     </state>
-    <state width="3028" height="489" key="GridCell.Tab.0.right/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1602022227228" />
-    <state x="1045" y="506" key="SettingsEditor" timestamp="1602020956137">
+    <state width="3028" height="489" key="GridCell.Tab.0.right/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1602257236303" />
+    <state x="1045" y="506" key="SettingsEditor" timestamp="1602236310925">
       <screen x="0" y="0" width="3072" height="1728" />
     </state>
-    <state x="1045" y="506" key="SettingsEditor/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1602020956137" />
+    <state x="1045" y="506" key="SettingsEditor/0.0.3072.1728/-1680.1093.1680.1050@0.0.3072.1728" timestamp="1602236310925" />
     <state x="1199" y="397" width="672" height="678" key="search.everywhere.popup" timestamp="1601842757437">
       <screen x="0" y="0" width="3072" height="1728" />
     </state>
