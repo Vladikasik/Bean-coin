@@ -40,27 +40,26 @@ if not session:
         write_session(user.get_text_to_session())
 else:
     user = User(session[0], session[1], session[2], session[3], session[4], session[5], )
-    print(f'Username : {user.username}')
-    print(f'Address : {user.address}')
+    while 1:
+
+        start = input('1 - Send money\n'
+                      '2 - Watch balance\n'
+                      '3 - Watch chain\n'
+                      '0 - Exit\n')
+
+        if start == '1':
+            pass
+        elif start == '2':
+            pass
+        elif start == '3':
+            pass
+        elif start == '0':  # exiting from while
+            break
+
+        else:
+            print('Try to choose correct number))')
 
 
 
 
-# while 1:
-#
-#     start = input('1 - Send money\n'
-#                   '2 - Watch balance\n'
-#                   '3 - Watch chain\n'
-#                   '0 - Exit\n')
-#
-#     if start == '1':
-#         pass
-#     elif start == '2':
-#         pass
-#     elif start == '3':
-#         pass
-#     elif start == '0': # exiting from while
-#         break
-#
-#     else:
-#         print('Try to choose correct number))')
+
