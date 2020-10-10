@@ -13,6 +13,7 @@ class Block:
         self.prev_hash = hash
         self.salt = 0
         self.confirmed = False
+        self.signature = ''
 
     # some calculating to confirm the operation
     def confirm(self):
@@ -22,24 +23,22 @@ class Block:
     def get_hash(self):
         pass
 
-    def create_signature(self):
-
-        signature = rsa.sign(get_text_without_signature(), privkey, 'SHA-1')
-
-    # return string as json obj to get hash for next block
+        # return string as json obj to get hash for next block
     def get_text_without_signature(self):
         # Salt must be calculated and confirmation needn't change hash
-
-        exit_str = "{DigitalSignature:{TimeStamp:{%s},SenderWallet:{%s},ReceiverWallet:{%s},Amount:{%s},Message:{%s}HashOfPreviousBlock:{%s}}" % (
-        str(self.timestamp), self.wallet_sender, self.wallet_receiver, str(self.amount), self.message, self.prev_hash)
-
+        exit_str = json.dumps(self.get_dict())
         return exit_str
+
+    # creating signature of block
+    def create_signature(self):
+
+        self.signature = rsa.sign(self.get_text_without_signature(), privkey, 'SHA-1')
 
     # returns dictionary with block info
     def get_dict(self):
         result_dict = {'TimeStamp': {self.timestamp}, 'SenderWallet': {self.wallet_sender},
                        'ReceiverWallet': {self.wallet_receiver}, 'Amount': {self.amount}, 'Message': {self.message},
-                       HashOfPreviousBlock: {self.prev_hash}}
+                       'HashOfPreviousBlock' : {self.prev_hash}}
 
         return result_dict
 

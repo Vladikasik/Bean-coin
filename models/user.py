@@ -9,13 +9,14 @@ import rsa
 class User:
 
     # do not create here because has <create> method
-    def __init__(self):
-        self.username = ''
-        self.address = ''
-        self.blocks = []
-        self.semblance_of_balance = 0
-        self.public_key = 0
-        self.private_key = 0
+    def __init__(self, username='', address='', blocks=[],
+                 sembalance_of_balance=0, public_key='', private_key=''):
+        self.username = username
+        self.address = address
+        self.blocks = blocks
+        self.semblance_of_balance = sembalance_of_balance
+        self.public_key = public_key
+        self.private_key = private_key
 
     # creating user with unique address
     def create(self, username):
@@ -38,6 +39,10 @@ class User:
         self.public_key = pubkey.save_pkcs1()
         self.private_key = privkey.save_pkcs1()
 
+    def get_text_to_session(self):
+        exit_list = f'["{str(self.username)}", "{str(self.address)}", "{str(self.blocks)}", "{str(self.semblance_of_balance)}", "{str(self.public_key)}", "{str(self.private_key)}"]'
+        return exit_list
+
     # finding blocks where self address is sender or receiver
     def find_blocks(self):
 
@@ -46,4 +51,3 @@ class User:
         for i in curr_chain:
             if i[user_from] == self.address or i[user_to] == self.address:
                 self.blocks.append(i)
-

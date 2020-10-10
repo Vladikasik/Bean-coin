@@ -15,19 +15,11 @@ print('-------------------------------------------\n'
       '|                                         |\n'
       '-------------------------------------------\n')
 
+def write_session(session):
+    with open('user.session','w') as f:
+        f.write(session)
 
-def create_account():
-    username = input('Input our username\n')
-
-    user = User()
-
-    user.create(username)
-
-    print(f'Username : {user.username}')
-    print(f'Address : {user.address}')
-
-
-with open('session.json', 'r') as file:
+with open('user.session', 'r') as file:
     session = json.load(file)
 
 if not session:
@@ -36,7 +28,23 @@ if not session:
     if ans == '2':
         exit(0)
     else:
-        create_account()
+        username = input('Input our username\n')
+
+        user = User()
+
+        user.create(username)
+
+        print(f'Username : {user.username}')
+        print(f'Address : {user.address}')
+
+        write_session(user.get_text_to_session())
+else:
+    user = User(session[0], session[1], session[2], session[3], session[4], session[5], )
+    print(f'Username : {user.username}')
+    print(f'Address : {user.address}')
+
+
+
 
 # while 1:
 #
