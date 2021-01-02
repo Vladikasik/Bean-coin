@@ -4,6 +4,7 @@ import string
 import random
 import chain
 import rsa
+from chain import Chain
 
 
 class User:
@@ -46,8 +47,20 @@ class User:
     # finding blocks where self address is sender or receiver
     def find_blocks(self):
 
-        curr_chain = chain.get_current()
+        curr_chain = Chain.get_current()
 
         for i in curr_chain:
             if i[user_from] == self.address or i[user_to] == self.address:
                 self.blocks.append(i)
+
+    def can_send(self, ammount):
+        can_send = 0
+        self.find_blocks()
+        for block in self.blocks:
+            if block.wallet_receiver == self.address:
+                can_send += block.amount
+
+        if ammount <= can_send:
+            return True
+        else:
+            return False
